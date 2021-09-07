@@ -1,223 +1,382 @@
-<!DOCTYPE html>
-<html>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta charset="UTF-8">
-    <style>
-        html{
-            background-color: black;
-        }
- #navbar{
-  background-color: #4E4E50;
-  position:static;
-  top: 0;
-  width: auto;
-  height: 10%;
-  padding-top: 10px;
-  text-align:start;
-  
-}
-nav ul{
-  list-style: none;
-  text-align: right;
-  }
+<!doctype html>
+<html lang="en" data-safeMod="false" data-autoHideScrollbar="true" data-safeModPageInAnimation="fadeIn" data-inAnimation="fadeInUp" data-outAnimation="fadeOutDownBig" data-cover-h1-tune=".85" data-cover-h2-tune="2.3" data-cover-h3-tune=".6" data-cover-h3-span-tune=".8" data-twitter-name="#">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="Karan Bhatia">
+<meta name="keywords" content="karan,bhatia">
+<meta name="author" content="">
+<title>Karan Bhatia- Software & IOT Professional</title>
 
-nav li a{
-  text-decoration: none;
-  color: black;
-  margin-right: 10px;
-  margin-left: 10px;
-  font-size: 1.3em;
-  font-weight: 700;
-  letter-spacing: 2px;
-  }
+<link rel="shortcut icon" href="images/ico/favicon.ico">
+<link rel="apple-touch-icon" href="images/ico/apple-touch-icon.png" />
 
-li a:visited{
-  color: white;
-}
-nav ul li {
-  display: inline-block;
-}
-#welcome p{
-color: #84CEEB;
-    font-size: 42px;
-    font-weight: auto;
-    font-style:Bold;
-    text-align: center;
-}
+<script type="text/javascript" src="js/modernizr.js"></script>
+<!--[if lte IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/selectivizr-min.js"></script>
+    <![endif]-->
 
-h1{
-    text-align: center;
-    color: white;
-    font-size: 44px;
-    
+<link rel="stylesheet" type="text/css" media="print" href="css/print.css">
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/book.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/fonts.css">
+<link class="cover-skin" rel="stylesheet" type="text/css" href="css/skins/cover/standart.css">
+<link class="base-skin" rel="stylesheet" type="text/css" href="css/skins/base/clean.css">
+<link class="paper-bg-skin" rel="stylesheet" type="text/css" href="css/skins/paper-bg/cream-dust.css">
+<link class="body-bg-skin" rel="stylesheet" type="text/css" href="css/skins/body-bg/noisy-net.css">
+<style>
+        .preloader {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 9999;
+   background-image: url('/images/loader.gif');
+   background-repeat: no-repeat; 
+   background-color: #FFF;
+   background-position: center;
 }
-h2{
-    color: #C3073F;
-    text-align: center;
-    font-size:40px;
-}
-.box{
-    margin: auto;
-    display: block;
-    width: 280px;
-  height: 280px;
-  padding: 0px;
-  border: 3px solid #254E58;
-  border-top-left-radius: 70%;
-}
-.logo {
-  display:block;
-    margin-top: -16%;
-    margin-left: 70%;
-    margin-right: 120px;
-    height: 200px;
-    width: 200px;
-    border: 2px solid white;
-    border-radius: 50%;
-}
-.eye{
-    margin-top: -18%;
-    margin-left: 70px;
-   display: block;
-   height: 220px;
-   width: 220px;
-}
+    </style>
+</head>
+<body>
+<div class="preloader"></div>
 
-#contact{
-  background-color: gray;
-  padding: 35px 0 20px 0;
-  width:100%;
-}
-.contact{
-  display: inline-block;
-  padding: auto;
-  margin:  auto;
-}
-.contact li {
-  display:inline-block;
-  list-style:square;
-  float:none;
-  }
-#contact p{
-  font-size: 1.7em;
-  font-weight: 700;
-}
-#contact li a{
-  text-decoration: none;
-  display: inline-block;
-  color: black;
-  margin-right: 19px;
-  margin-left: auto;
-  font-size: 1.7em;
-  letter-spacing: 20px;
-  }
+<section class="main">
 
-#contact li a:visited{
-  color: white;
-  
-}
+<div id="rm-container" class="rm-container rm-closed">
 
+<header id="header">
 
-.Services-p{
-    color: black;
-    font-size: 22px;
-    margin: auto;
-}
-
-
-@media only screen and (max-width: 815px) {
-    /* For mobile phones: */
-.box{
-  display: inline-block;
-  float: right;
-  width: 95%;
-  margin: 2.5%;}
-
-  #projects{
-    height: 1000px;
-  }}
-@media only screen and (max-width: 367px){}
-</style>
-
-<nav id="navbar">
-    <ul>
-        <li><a href="#welcome" style="color:white;">Introduction</a></li>
-        <li><a href="#contact" style="color: white;">Contact</a></li>
-      </ul>
+<nav>
+<ul>
+<li><a href='#/home'></a></li>
+<li><a href='#/resume'></a></li>
+<li><a href='#/portfolio'></a></li>
+<li><a href='#/contact'></a></li>
+</ul>
 </nav>
 
+</header>
 
 
-<div id="welcome">
-<h1><i class="fa fa-apple"></i> KARAN BHATIA</h1>
+<div class="rm-wrapper">
 
-<img  class="box"src="data:image/jpeg;base64,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" alt="KARAN BHATIA">
-<img class="logo" src="https://i.imgur.com/WxrqGSM.gif"  alt="logo">
-<img class="eye" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/56d23c12686651.5626ba130dd8c.gif" alt="eye">
+<div class="rm-cover">
 
-<p>🧑🏻‍💻iOS Developer</p>
+<div id="home" class="rm-front page">
+
+<div class="antiscroll-wrap">
+
+<div class="antiscroll-inner">
+
+<div class="cover">
+
+<div class="cover-image-holder">
+<img src="images/site/cover.jpg" alt="cover-image">
+</div>
+
+
+<h1>KARAN BHATIA</h1>
+
+
+<h2>Software professional</h2>
+
+
+<h3><span>I AM FROM</span> EARTH</h3>
+<h3><span>I CREATE</span> DIGITAL Transformation</h3>
+
+<h3><span>ASSISTANT</span> Online</h3>
+
+
+<a href="#/resume" class="rm-button-open ribbon">
+<span class="ribbon-stitches-top"></span>
+<strong class="ribbon-content">OPEN</strong>
+<span class="ribbon-stitches-bottom"></span>
+</a>
+
+
+
+
+
+
 
 </div>
 
-<br>
-<h2>About Me</h2>
-<div id="about" style="background-color: gray;color: white; border-radius: 25px; width: 50%; text-align: center; padding: 20px; margin: auto;">
-<p style="font-size: x-large;">Name: Karan B. Bhatia</p>
-<p style="font-size: x-large;">Phone: +91-8160850731</p>
-<p style="font-size: x-large;">Email-id: karanbhatia.kb123@gmail.com</p>
-<p style="font-size: x-large;">Qulification: 👻</p>
 </div>
-<br>
 
-<div id="Services">
-    <h2>SERVICES</h2>
-    <div class="columns" style="column-count:1;;" >
+</div>
 
-<h2  style="background-color: gray;color: white;font-size: 24px; border-radius: 25px;margin: auto; margin-left: 10%; width: 400px; height: auto; text-align: center;">DEVELOPMENT SKILLS</h2><br>
-<div style="background-color:white;color: black; border: 5px solid gray; width: 400px; margin: auto; margin-left: 9.6%; padding: 0.7%; height: auto;">
-<p class="Services-p" style="font-size: 21px;"> HTML/HTML5</p>
-<progress value="70" max="100" ></progress>
-<p class="services-p" style="font-size: 21px;"> CC3</p>
-<progress value="40" max="100" ></progress>
-<p class="services-p" style="font-size: 21px;"> Swift</p>
-<progress value="60" max="100" ></progress>
-<p class="services-p" style="font-size: 21px;"> Python</p>
-<progress value="30" max="100"></progress>
-<p class="services-p" style="font-size: 21px;"> JavaScript</p>
-<progress value="45" max="100"></progress> 
-</div /*progress1*/><br>
-
-    <h2 style="background-color: gray;color: white;font-size: 24px; border-radius: 25px;margin: auto;margin-right: 10%; width: 400px; text-align: center; margin-top: -21.8%;">DESIGN SKILLS</h2><br>
-    <div style="background-color:white;color: black; border: 5px solid gray; width: 400px; margin: auto; margin-right: 9.6%; padding: 0.7%; height: auto;">
-        <p class="Services-p" style="font-size: 21px;"> Unity 3D</p>
-        <progress value="70" max="100"></progress>
-        <p class="services-p" style="font-size: 21px;"> Photoshop</p>
-        <progress value="40" max="100"></progress>
-        <p class="services-p" style="font-size: 21px;"> Animation</p>
-        <progress value="60" max="100"></progress>
+</div>
 
 
-</div /*columns*/>
-</div /*Services*/>
+
+<div id="resume" class="rm-back page">
+
+<div class="antiscroll-wrap">
+
+<div class="antiscroll-inner">
+
+<div class="content">
+<h2><span>SERVICES</span></h2>
+<h3><span>DEVELOPMENT SKILLS</span></h3>
+
+<div class="skill-group">
+
+<div class="skill-unit">
+<h4>Augmented reality (AR)</h4>
+<div class="bar" data-percent="100">
+<div class="progress"></div>
+</div>
+</div>
 
 
-<br><br><br>
-<br><br><br>
+<div class="skill-unit">
+<h4>Swift</h4>
+<div class="bar" data-percent="70">
+<div class="progress"></div>
+</div>
+</div>
 
-<div id="contact"> 
-    <p style="text-align: center;">KEEP IN TOUCH!</p>
-    <ul class="contact">
-      <li><a href="https://www.facebook.com/profile.php?id=100006739365646" target="_blank" class="fa fa-facebook"></a></li>
-      <li><a href="https://instagram.com/karanbhatia.kb?igshid=95vdc4ecy2q0" target="_blank" class="fa fa-instagram"></a></li>
-      <li><a id="profile-link" href="https://twitter.com/karanbhatia__kb" target="_blank" class="fa fa-twitter"></a></li>
-      <li><a href="mailto:karanbhatia.kb123@gmail.com" target="_blank" class="fa fa-envelope"></a></li>
-    </ul>
-  
-  </div>
+
+<div class="skill-unit">
+<h4>Python</h4>
+<div class="bar" data-percent="50">
+<div class="progress"></div>
+</div>
+</div>
+
+
+<div class="skill-unit">
+<h4>IOT</h4>
+<div class="bar" data-percent="100">
+<div class="progress"></div>
+</div>
+</div>
+
+</div>
+
+<h3><span>DESIGN SKILLS</span></h3>
+
+<div class="skill-group">
+
+<div class="skill-unit">
+<h4>Unity 3D</h4>
+<div class="bar" data-percent="90">
+<div class="progress"></div>
+</div>
+</div>
+
+
+<div class="skill-unit">
+<h4>Photoshop</h4>
+<div class="bar" data-percent="60">
+<div class="progress"></div>
+</div>
+</div>
+
+
+<div class="skill-unit">
+<h4>3D Models</h4>
+<div class="bar" data-percent="40">
+<div class="progress"></div>
+</div>
+</div>
+
+</div>
+
+<h3><span>SERVICES</span></h3>
+
+<div class="service-group">
+
+<div class="service">
+<i class="icon-laptop"></i>
+<h4>IOT Devices</h4>
+<p>I make a lot more futuristic devices. It is a long established fact that a reader will be distracted by the readable content. </p>
+</div>
+
+
+<div class="service">
+<i class="icon-tablet"></i>
+<h4>Mobile Development</h4>
+<p>I can develop iOS apps. It is a long established fact that a reader will be distracted by the readable content. </p>
+</div>
+
+
+<div class="service">
+<i class="icon-globe"></i>
+<h4>Social Media</h4>
+<p>I am a social media expert. It is a long established fact that a reader will be distracted by the readable content. </p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="rm-overlay"></div>
+</div>
+
+</div>
+
+<div id="portfolio" class="rm-middle portfolio page">
+
+<div class="rm-inner">
+
+<div class="antiscroll-wrap">
+
+<div class="antiscroll-inner">
+
+<div class="content">
+<h2><span>ABOUT ME</span></h2>
+<h4 class="about-text">I am a <span class="label">Software & IOT professional</span> can assist you in digital transformation.</h4>
+</div>
+
+</div>
+
+</div>
+
+<div class="rm-overlay"></div>
+</div>
+</div>
+
+
+<div class="rm-right">
+
+<div class="rm-front">
+
+<div class="cover">
+
+<div class="cover-image-holder">
+<img src="images/site/cover-2.jpg" alt="cover-image">
+</div>
+
+</div>
+
+</div>
+
+
+<div id="contact" class="rm-back page">
+
+<div class="antiscroll-wrap">
+
+<div class="antiscroll-inner">
+
+<div class="content">
+<h2><span>CONTACT</span></h2>
+
+<p class="center">Please feel free to contact me about anything.</p>
+<p class="center">+91 81608 50731</p>
+<h3><span>LET'S SOCIALIZE</span></h3>
+
+<ul class="social">
+<li><a class="facebook" href="#"></a></li>
+<li><a class="twitter" href="#"></a></li>
+<li><a class="linkedin" href="#"></a></li>
+<li><a class="instagram" href="#"></a></li>
+
+</ul>
+
+<h3><span>DROP ME A LINE!</span></h3>
+
+<div class="contact-form">
+
+<div class="letter cf">
+<div class="stamp">
+<img src="images/site/stamp-image.png" alt="stamp">
+</div>
+<div class="letter-info">
+<h4>Karan Bhatia</h4>
+<p><a href="#"><i><span class="__cf_email__" data-cfemail="ff9c90918b9e9c8bbf929697968d989e95959e8dd19c9092">[email&#160;protected]</span></i></a></p>
+<p> - India, Earth</p>
+</div>
+</div>
+
+<form id="contact-form" action="#" method="post">
+
+<input type="hidden" id="to" name="to" value="#">
+<p>
+<label for="name">Name</label>
+<input type="text" name="name" id="name" class="required">
+</p>
+<p>
+<label for="email">Email</label>
+<input type="text" name="email" id="email" class="required email">
+</p>
+<p>
+<label for="subject">Subject</label>
+<input type="text" name="subject" id="subject" class="required">
+</p>
+<p>
+<label for="message">Message</label>
+<textarea name="message" id="message" class="required"></textarea>
+</p>
+<p>
+<img class="ajax-loader" src="images/bckg/loader_light.gif" alt="Sending ...">
+<input type="submit" class="btn submit" value="SEND">
+</p>
+</form>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<a class="rm-close"><span></span></a>
+
+</div>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<div class="p-overlay">
+</div>
+
+
+<div class="p-overlay">
+</div>
+
+
+<div class="loader"></div>
+
+
+<div class="alert"></div>
+
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
+<script src="js/jquery.address-1.5.min.js"></script>
+<script src="js/antiscroll.js"></script>
+<script src="js/jquery.fittext.js"></script>
+<script src="js/jquery.imagesloaded.min.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.fancybox-1.3.4.pack.js"></script>
+<script src="js/send-mail.js"></script>
+<script src="js/twitterFetcher_v10_min.js"></script>
+<script src="js/main.js"></script>
+<Script>$(window).load(function() {
+           $('.preloader').fadeOut('slow');
+        });</Script>
+</body>
 </html>
 
-
-
-
-
-    
